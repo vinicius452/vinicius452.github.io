@@ -9,73 +9,73 @@ alternativas = [pergunta, rA, rB, rC]
 let questoes = [
   [
     'Pergunta 1: Qual o maior animal terrestre?',
-    'a) Baleia Azul',
-    'b) Dinossauro',
-    'c) Elefante africano',
-    'c) Elefante africano'
+    'Baleia Azul',
+    'Dinossauro',
+    'Elefante africano',
+    'Elefante africano'
   ],
   [
     'Pergunta 2: Que líder mundial ficou conhecida como “Dama de Ferro”?',
-    'a) Dilma Rousseff',
-    'b) Angela Merkel',
-    'c) Margaret Thatcher',
-    'c'
+    'Dilma Rousseff',
+    'Angela Merkel',
+    'Margaret Thatcher',
+    'Margaret Thatcher'
   ],
   [
     'Pergunta 3: Quais os nomes dos três Reis Magos?',
-    'a) Gaspar, Nicolau e Natanael',
-    'b) Belchior, Gaspar e Baltazar',
-    'c) Belchior, Gaspar e Nataniel',
-    'b'
+    'Gaspar, Nicolau e Natanael',
+    'Belchior, Gaspar e Baltazar',
+    'Belchior, Gaspar e Nataniel',
+    'Belchior, Gaspar e Baltazar'
   ],
   [
     'Pergunta 4: Qual a religião monoteísta que conta com o maior número de adeptos no mundo?',
-    'a) Cristianismo',
-    'b) Zoroatrismo',
-    'c) Islamismo',
-    'a'
+    'Cristianismo',
+    'Zoroatrismo',
+    'Islamismo',
+    'Cristianismo'
   ],
   [
     'Pergunta 5: Qual desses filmes foi baseado na obra de Shakespeare?',
-    'a) Muito Barulho por Nada (2012)',
-    'b) Capitães de Areia (2011)',
-    'c) A Dama das Camélias (1936)',
-    'a'
+    'Muito Barulho por Nada (2012)',
+    'Capitães de Areia (2011)',
+    'A Dama das Camélias (1936)',
+    'Muito Barulho por Nada (2012)'
   ],
   [
     'Pergunta 6: Qual o nome do cientista que descobriu o processo de pasteurização e a vacina contra a raiva?',
-    'a) Marie Curie',
-    'b) Blaise Pascal',
-    'c) Louis Pasteur',
-    'c'
+    'Marie Curie',
+    'Blaise Pascal',
+    'Louis Pasteur',
+    'Louis Pasteur'
   ],
   [
     'Pergunta 7: As pessoas de qual tipo sanguíneo são consideradas doadores universais?',
-    'a) Tipo A',
-    'b) Tipo B',
-    'c) Tipo O',
-    'c'
+    'Tipo A',
+    'Tipo B',
+    'Tipo O',
+    'Tipo O'
   ],
   [
     'Pergunta 8: Quais são os cromossomos que determinam o sexo masculino?',
-    'a) Os V',
-    'b) Os X',
-    'c) Os Y',
-    'c'
+    'Os V',
+    'Os X',
+    'Os Y',
+    'Os Y'
   ],
   [
     'Pergunta 9: Em que estado australiano fica situada a cidade de Sydney?',
-    'a) Nova Gales do Sul',
-    'b) Victoria',
-    'c) Tasmânia',
-    'a'
+    'Nova Gales do Sul',
+    'Victoria',
+    'Tasmânia',
+    'Nova Gales do Sul'
   ],
   [
     'Pergunta 10: Quem amamentou os gêmeos Rômulo e Remo?',
-    'a) uma cabra',
-    'b) uma loba',
-    'c) uma vaca',
-    'b'
+    'uma cabra',
+    'uma loba',
+    'uma vaca',
+    'uma loba'
   ]
 ]
 
@@ -95,14 +95,3 @@ function next() {
   count++
 }
 info.innerHTML = `Você acertou ${acertos}/10 questões`
-
-// for (let i = 0; i < 10; i++) {
-//
-//   var radalt = document.getElementsByName('radalt')
-//   if (radalt.checked == questoes[i][4]) {
-//     info.innerHTML = 'Acertou miseravi!'
-//     acertos++
-//   } else {
-//     info.innerHTML = 'Errou miseravi!'
-//   }
-// }
