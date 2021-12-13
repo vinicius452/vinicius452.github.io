@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(Imagens\ Desafio/fundomenu.jpg);
+  font: normal 12pt arial;
+}
+.container {
+  position: relative;
+  width: 400px;
+  height: 70px;
+  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.container ul {
+  display: flex;
+  width: 350px;
+}
+
+.container ul li {
+  position: relative;
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+}
+.container ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+.container ul li a .icon {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 1.5em;
+  text-align: center;
+  transition: 0.5s;
+  color: black;
+}
+.container ul li.active a .icon {
+  transform: translateY(-35px);
+}
+.container ul li a .text {
+  position: absolute;
+  color: black;
+  font-weight: 400;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.container ul li.active a .text {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.indicador {
+  position: absolute;
+  top: -50%;
+  width: 70px;
+  height: 70px;
+  background: yellow;
+  border-radius: 50%;
+  border: 6px solid #6cc4e0;
+  transition: 00.5s;
+}
+.container ul li:nth-child(1).active ~ .indicador {
+  transform: translateX(calc(70px * 0));
+}
+.container ul li:nth-child(2).active ~ .indicador {
+  transform: translateX(calc(70px * 1));
+}
+.container ul li:nth-child(3).active ~ .indicador {
+  transform: translateX(calc(70px * 2));
+}
+.container ul li:nth-child(4).active ~ .indicador {
+  transform: translateX(calc(70px * 3));
+}
+.container ul li:nth-child(5).active ~ .indicador {
+  transform: translateX(calc(70px * 4));
+}

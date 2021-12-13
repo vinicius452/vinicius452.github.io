@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <div class="voltar">
+      <a href="index.html">
+        <ion-icon name="arrow-undo-circle-sharp"></ion-icon>
+      </a>
+    </div>
+    <header>
+      <h1>Quiz</h1>
+    </header>
+    <section>
+      <div class="alternativas">
+        <div id="pergunta">pergunta</div>
+        <div>
+          <input type="radio" name="radalt" />
+          <label for="respostaA" id="respostaA">A</label>
+        </div>
+        <div>
+          <input type="radio" name="radalt" />
+          <label for="respostaA" id="respostaB">B</label>
+        </div>
+        <div>
+          <input type="radio" name="radalt" />
+          <label for="respostaA" id="respostaC">C</label>
+        </div>
+      </div>
+      <button onclick="next()">Enviar</button>
+      <p id="info">info</p>
+    </section>
+    <footer>
+      <p>Criado por Marcos Vinicius</p>
+    </footer>
+    <script src="quiz.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
